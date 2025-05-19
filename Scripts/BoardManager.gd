@@ -67,7 +67,7 @@ func _on_dice_root_on_dice_rolled(value: int) -> void:
 	var question_correct=false
 	show_popup()
 	
-		
+	#AQUI QUE TEMOS QUE MEXER
 	#if this user get 1 to 5 and this user do not have any piece unlocked to move so skip turn
 	if(question_correct==true && piecesManager.HasThisPlayerUnlockedTurn(currentPlayerColor) == false):
 		print("skip this player turn because this player has not unlocked any piece yet")

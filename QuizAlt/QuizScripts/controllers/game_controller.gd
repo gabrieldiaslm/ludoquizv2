@@ -1,5 +1,6 @@
 extends Node
 
+signal close_popup()
 @export var quiz: QuizTheme
 @export var color_right: Color
 @export var color_wrong:Color
@@ -75,3 +76,6 @@ func _next_question() -> void: #função do quiz normal do tutorial
 	await get_tree().create_timer(1).timeout
 	for bt in buttons:
 		bt.modulate = Color.WHITE
+	emit_signal("close_popup")
+	
+	

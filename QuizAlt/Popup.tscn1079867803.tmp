@@ -9,5 +9,3 @@ visible = true
 script = ExtResource("1_lh8nd")
 
 [node name="Main" parent="." instance=ExtResource("1_q8s6c")]
-
-[connection signal="close_popup" from="Main" to="." method="_on_main_close_popup"]

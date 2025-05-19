@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjg1unfgfe3rm"]
+
+[ext_resource type="Script" uid="uid://1vys340xo2mm" path="res://QuizAlt/popup.gd" id="1_lh8nd"]
+[ext_resource type="PackedScene" uid="uid://bdijwedo7hlpj" path="res://QuizAlt/QuizMain.tscn" id="1_q8s6c"]
+
+[node name="Popup" type="Popup"]
+size = Vector2i(1280, 720)
+visible = true
+script = ExtResource("1_lh8nd")
+
+[node name="Main" parent="." instance=ExtResource("1_q8s6c")]

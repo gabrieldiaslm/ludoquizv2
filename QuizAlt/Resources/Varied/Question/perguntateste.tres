@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://cje0ef327g16s"]
+
+[ext_resource type="Texture2D" uid="uid://cpdywaiqn07fa" path="res://Arts/logo.png" id="1_1i1lw"]
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1_yv0t6"]
+
+[resource]
+script = ExtResource("1_yv0t6")
+question_info = "Qual o nome da cor vermelha"
+type = 1
+question_image = ExtResource("1_1i1lw")
+options = Array[String](["amarelo", "verde", "vermelho"])
+correct = "vermelho"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

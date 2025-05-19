@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=6 format=3 uid="uid://bfvyqiru7b13s"]
+
+[ext_resource type="Script" uid="uid://musv3l1re3c0" path="res://QuizAlt/QuizScripts/Resources/theme.gd" id="1_ax0kn"]
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="2_n8dsx"]
+[ext_resource type="Resource" uid="uid://cje0ef327g16s" path="res://QuizAlt/Resources/Varied/Question/perguntateste.tres" id="3_n8dsx"]
+[ext_resource type="Resource" uid="uid://dgg50a2vmfsm8" path="res://QuizAlt/Resources/Varied/Question/perguntatest2.tres" id="4_axjm1"]
+[ext_resource type="Resource" uid="uid://deefrbr44gjmm" path="res://QuizAlt/Resources/Varied/Question/perguntateste3.tres" id="5_5ry37"]
+
+[resource]
+script = ExtResource("1_ax0kn")
+theme = Array[ExtResource("2_n8dsx")]([ExtResource("3_n8dsx"), ExtResource("4_axjm1"), ExtResource("5_5ry37")])
+metadata/_custom_type_script = "uid://musv3l1re3c0"

@@ -1,0 +1,151 @@
+[gd_scene load_steps=9 format=3 uid="uid://pmo1mmt2quj"]
+
+[ext_resource type="Texture2D" uid="uid://cpdywaiqn07fa" path="res://Arts/logo.png" id="1_0336k"]
+[ext_resource type="Script" uid="uid://bsatmh73n4qkn" path="res://Scripts/MenuPrincipal.gd" id="1_ufr4i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hn0nd"]
+bg_color = Color(1, 0.823529, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bd8gm"]
+texture = ExtResource("1_0336k")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pfblw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pfblw"]
+bg_color = Color(1, 0.417398, 0.638182, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bd8gm"]
+bg_color = Color(0.548839, 0, 0.281566, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dtfr5"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ufr4i")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hn0nd")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -526.0
+offset_top = -474.0
+offset_right = 510.0
+offset_bottom = 215.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_bd8gm")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.0
+offset_top = -2.0
+offset_right = 234.0
+offset_bottom = 315.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pfblw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pfblw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bd8gm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dtfr5")
+text = "Jogar"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pfblw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pfblw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bd8gm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dtfr5")
+text = "Configurações"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pfblw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pfblw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bd8gm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dtfr5")
+text = "Créditos"
+
+[node name="Button4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pfblw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pfblw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bd8gm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dtfr5")
+text = "Sair"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_exit_pressed"]

@@ -42,5 +42,5 @@ texture = ExtResource("6_to8xc")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
 root_node = NodePath("../Sprite2D_Board/Sprite2D_Yellow")
 libraries = {
-"": SubResource("AnimationLibrary_cdckt")
+&"": SubResource("AnimationLibrary_cdckt")
 }

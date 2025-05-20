@@ -5,6 +5,7 @@ extends Node2D
 @export var piecesManager: PiecesManager
 @export var animation_PlayerForPlaces: AnimationPlayer
 
+
 var currentPlayerTurnIndex:int = -1
 var currentDiceValue:int = -1
 var currentAnimationPlaceName:String = ""
@@ -64,12 +65,14 @@ func _on_dice_root_on_dice_roll_begin() -> void:
 func _on_dice_root_on_dice_rolled(value: int) -> void:
 	print("diceRolled! Value is ",value)
 	currentDiceValue = value
-	var question_correct=false
-	show_popup()
+	
+	
+	var question_correct = show_popup()
+	
 	
 	#AQUI QUE TEMOS QUE MEXER
 	#if this user get 1 to 5 and this user do not have any piece unlocked to move so skip turn
-	if(question_correct==true && piecesManager.HasThisPlayerUnlockedTurn(currentPlayerColor) == false):
+	if(question_correct==false && piecesManager.HasThisPlayerUnlockedTurn(currentPlayerColor) == false):
 		print("skip this player turn because this player has not unlocked any piece yet")
 		#update turn
 		UpdatePlayerTurn()
@@ -92,7 +95,8 @@ func MovePieces(value: int, moveThisPiece: Piece) -> void:
 	print("after value increase ",value)
 	if value>=57:
 		value = 57
-		pass
+		pass #fim de jogo
+		
 	print("after after value increase ",value)
 	#update game state other wise use can click on piece or dice and game will brack
 	GameManager.UpdateGameCurrentState(GameManager.GameStateEnum.Null)
@@ -101,7 +105,7 @@ func MovePieces(value: int, moveThisPiece: Piece) -> void:
 	for i in range(moveThisPiece.GetCurrentPosition(),value):
 		print(i)
 		moveThisPiece.position = way_points.GetPositionOfThisPoint(i,moveThisPiece.CurrentPlayerColor)
-		await get_tree().create_timer(1).timeout
+		await get_tree().create_timer(0.1).timeout
 	
 	if value == 57:
 		#update current piece value to current position so next time we get frash value which we use in value
@@ -133,7 +137,7 @@ func MovePiecesToHome(value: int, moveThisPiece: Piece) -> void:
 	for i in range(moveThisPiece.GetCurrentPosition()-1,value-1,-1):
 		print("back move ",i,"__",moveThisPiece.CurrentPlayerColor)
 		moveThisPiece.position = way_points.GetPositionOfThisPoint(i,moveThisPiece.CurrentPlayerColor)
-		await get_tree().create_timer(0.5).timeout
+		await get_tree().create_timer(0.1).timeout
 		
 	#update current piece value to current position so next time we get frash value which we use in value
 	moveThisPiece.CurrentPosition = value
@@ -235,3 +239,7 @@ func show_popup():
 	add_child(new_popup)
 	new_popup.name = "PopupInstance"
 	new_popup.popup_centered()  # Ou show() para Window
+
+
+func _on_popup_secondary_signal(value: bool) -> void:
+	print(value)

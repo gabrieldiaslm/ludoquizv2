@@ -15,6 +15,7 @@ way_points = NodePath("../../WayPointsManager")
 piecesManager = NodePath("../../Pieces")
 
 [node name="Popup" parent="Board/board_GamePlay" instance=ExtResource("2_7jn7o")]
+visible = false
 
 [node name="Pieces" parent="." instance=ExtResource("3_x1548")]
 
@@ -26,6 +27,5 @@ IsAutoDiceRoll = false
 
 [node name="WayPointsManager" parent="." instance=ExtResource("7_rw8h0")]
 
-[connection signal="secondary_signal" from="Board/board_GamePlay/Popup" to="Board/board_GamePlay" method="_on_popup_secondary_signal"]
 [connection signal="OnDiceRollBegin" from="Dice/DiceRoot" to="Board/board_GamePlay" method="_on_dice_root_on_dice_roll_begin"]
 [connection signal="OnDiceRolled" from="Dice/DiceRoot" to="Board/board_GamePlay" method="_on_dice_root_on_dice_rolled"]

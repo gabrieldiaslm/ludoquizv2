@@ -1,13 +1,12 @@
 extends Node
 
-signal question_answer(value: bool)
+signal question_correct(value: bool)
 signal close_popup()
 @export var quiz: QuizTheme
 @export var color_right: Color
 @export var color_wrong:Color
 
-
-var target_node = null
+var resposta : bool
 var buttons: Array[Button]
 var index: int
 var correct: int
@@ -54,18 +53,18 @@ func load_quiz() -> void:
 func _buttons_asnwer(button) -> void:
 	if current_quiz.correct == button.text:
 		button.modulate = color_right
-		emit_signal("question_answer", true)
+		emit_signal("question_correct", true)
+		resposta = true
 		$AudioCorrect.play()
 		
 		
 	else:
 		button.modulate = color_wrong
-		emit_signal("question_answer", false)
+		emit_signal("question_correct", false)
+		resposta = false
 		$AudioIncorrect.play()
 	_next_question()
 	
-func _end_question() -> void: #voltar pro tabuleiro
-	pass
 	
 func _next_question() -> void: #função do quiz normal do tutorial
 	for bt in buttons:
@@ -74,8 +73,7 @@ func _next_question() -> void: #função do quiz normal do tutorial
 	await get_tree().create_timer(1).timeout
 	for bt in buttons:
 		bt.modulate = Color.WHITE
-	if target_node:
-		target_node.handle_popup_data($LineEdit.text)
-	emit_signal("close_popup")
+	emit_signal("close_popup", resposta)
+
 	
 	

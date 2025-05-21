@@ -5,7 +5,7 @@ extends Node2D
 @export var piecesManager: PiecesManager
 @export var animation_PlayerForPlaces: AnimationPlayer
 
-
+var question_correct
 var currentPlayerTurnIndex:int = -1
 var currentDiceValue:int = -1
 var currentAnimationPlaceName:String = ""
@@ -67,12 +67,14 @@ func _on_dice_root_on_dice_rolled(value: int) -> void:
 	currentDiceValue = value
 	
 	
-	var question_correct = show_popup()
-	
-	
+	await show_popup()
+	question_correct = GameManager.valor_da_resposta
 	#AQUI QUE TEMOS QUE MEXER
 	#if this user get 1 to 5 and this user do not have any piece unlocked to move so skip turn
-	if(question_correct==false && piecesManager.HasThisPlayerUnlockedTurn(currentPlayerColor) == false):
+	if(question_correct==false):
+		
+		print("resposta ", question_correct)
+		
 		print("skip this player turn because this player has not unlocked any piece yet")
 		#update turn
 		UpdatePlayerTurn()
@@ -239,7 +241,5 @@ func show_popup():
 	add_child(new_popup)
 	new_popup.name = "PopupInstance"
 	new_popup.popup_centered()  # Ou show() para Window
-
-
-func _on_popup_secondary_signal(value: bool) -> void:
-	print(value)
+	await new_popup.tree_exited
+	return

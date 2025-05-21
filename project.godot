@@ -12,12 +12,16 @@ config_version=5
 
 config/name="Godot_Ludo"
 config/version="0.1"
-run/main_scene="res://Levels/Level_MainGamePlay.tscn"
+run/main_scene="uid://pmo1mmt2quj"
 config/features=PackedStringArray("4.4", "Mobile")
 
 [autoload]
 
 GameManager="*res://Scripts/GameManager.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [dotnet]
 

@@ -64,6 +64,7 @@ func _on_dice_root_on_dice_roll_begin() -> void:
 
 func _on_dice_root_on_dice_rolled(value: int) -> void:
 	print("diceRolled! Value is ",value)
+	await get_tree().create_timer(1).timeout
 	currentDiceValue = value
 	
 	

@@ -22,6 +22,7 @@ func _on_settings_pressed() -> void:
 
 func _on_credits_pressed() -> void:
 	print('credits')
+	get_tree().change_scene_to_file("res://Scenes/menu/creditos.tscn")
 
 
 

@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=3 uid="uid://dk3j2l0b3pfx1"]
+
+[ext_resource type="Script" uid="uid://cplqu2enh64ia" path="res://Scenes/menu/creditos.gd" id="1_ixsqg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qe1m0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_25ou6"]
+bg_color = Color(1, 0.417398, 0.638182, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7kghu"]
+bg_color = Color(0.548839, 0, 0.281566, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyjco"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[node name="Creditos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ixsqg")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -23.0
+offset_top = -21.0
+offset_right = 1220.0
+offset_bottom = 678.0
+
+[node name="QuestionText" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -577.0
+offset_top = -254.0
+offset_right = 578.0
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 40
+text = "Ciência da Computação
+2025.1 - UESPI
+
+Gabriel Dias Lemos Martins
+Hellen Jasmine 
+Helena Sousa
+Lorena Bezerra"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -145.0
+offset_top = -114.0
+offset_right = 146.0
+offset_bottom = -53.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qe1m0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_25ou6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7kghu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wyjco")
+text = "VOLTAR"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed_credits"]

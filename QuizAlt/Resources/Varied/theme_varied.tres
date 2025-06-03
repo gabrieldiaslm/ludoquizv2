@@ -1,12 +1,19 @@
-[gd_resource type="Resource" script_class="QuizTheme" load_steps=6 format=3 uid="uid://bfvyqiru7b13s"]
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=13 format=3 uid="uid://bfvyqiru7b13s"]
 
 [ext_resource type="Script" uid="uid://musv3l1re3c0" path="res://QuizAlt/QuizScripts/Resources/theme.gd" id="1_ax0kn"]
 [ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="2_n8dsx"]
-[ext_resource type="Resource" uid="uid://cje0ef327g16s" path="res://QuizAlt/Resources/Varied/Question/perguntateste.tres" id="3_n8dsx"]
-[ext_resource type="Resource" uid="uid://dgg50a2vmfsm8" path="res://QuizAlt/Resources/Varied/Question/perguntatest2.tres" id="4_axjm1"]
-[ext_resource type="Resource" uid="uid://deefrbr44gjmm" path="res://QuizAlt/Resources/Varied/Question/perguntateste3.tres" id="5_5ry37"]
+[ext_resource type="Resource" uid="uid://vvn40twg636p" path="res://QuizAlt/Resources/Varied/Question/question_1.tres" id="3_8et6v"]
+[ext_resource type="Resource" uid="uid://3uddbekcsnaa" path="res://QuizAlt/Resources/Varied/Question/question_3.tres" id="3_bde51"]
+[ext_resource type="Resource" uid="uid://doahovosjjhh7" path="res://QuizAlt/Resources/Varied/Question/question_2.tres" id="4_xqxqu"]
+[ext_resource type="Resource" uid="uid://bnmw11v5hv77b" path="res://QuizAlt/Resources/Varied/Question/question_4.tres" id="6_okp4m"]
+[ext_resource type="Resource" uid="uid://cu1vj62fum6v1" path="res://QuizAlt/Resources/Varied/Question/question_5.tres" id="7_c0s03"]
+[ext_resource type="Resource" uid="uid://dsggjbyx3vxb7" path="res://QuizAlt/Resources/Varied/Question/question_6.tres" id="8_pov8d"]
+[ext_resource type="Resource" uid="uid://bk8ddqt7ynhkc" path="res://QuizAlt/Resources/Varied/Question/question_7.tres" id="9_yl3ca"]
+[ext_resource type="Resource" uid="uid://joxed16d38ls" path="res://QuizAlt/Resources/Varied/Question/question_8.tres" id="10_0a84f"]
+[ext_resource type="Resource" uid="uid://bv104mkqsi44u" path="res://QuizAlt/Resources/Varied/Question/question_9.tres" id="11_tdi1p"]
+[ext_resource type="Resource" uid="uid://ddil1txpjg6yb" path="res://QuizAlt/Resources/Varied/Question/question_10.tres" id="12_0d4c8"]
 
 [resource]
 script = ExtResource("1_ax0kn")
-theme = Array[ExtResource("2_n8dsx")]([ExtResource("3_n8dsx"), ExtResource("4_axjm1"), ExtResource("5_5ry37")])
+theme = Array[ExtResource("2_n8dsx")]([ExtResource("3_8et6v"), ExtResource("4_xqxqu"), ExtResource("3_bde51"), ExtResource("6_okp4m"), ExtResource("7_c0s03"), ExtResource("8_pov8d"), ExtResource("9_yl3ca"), ExtResource("10_0a84f"), ExtResource("11_tdi1p"), ExtResource("12_0d4c8")])
 metadata/_custom_type_script = "uid://musv3l1re3c0"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://doahovosjjhh7"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quem escreveu 'Romeu e Julieta'?"
+type = 0
+options = Array[String](["William Shakespeare", "Charles Dickens", "Jane Austen"])
+correct = "William Shakespeare"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

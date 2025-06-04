@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://27afed17dbf54bc681037cd94d4fd3c1"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "O que é um vertebrado?"
+type = 0
+options = Array[String](["Animal com coluna vertebral", "Animal que voa", "Animal marinho"])
+correct = "Animal com coluna vertebral"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

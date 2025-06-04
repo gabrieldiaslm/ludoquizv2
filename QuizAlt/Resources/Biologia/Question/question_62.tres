@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://00dbf71b2170414d974242321ada465b"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Que nome se dá à transformação do alimento em energia?"
+type = 0
+options = Array[String](["Digestão", "Respiração celular", "Metabolismo"])
+correct = "Metabolismo"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

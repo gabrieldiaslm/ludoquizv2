@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://e13060ceba9f49759a6c9530d4c88b10"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Como é chamado o estudo dos fungos?"
+type = 0
+options = Array[String](["Micologia", "Botânica", "Zoologia"])
+correct = "Micologia"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

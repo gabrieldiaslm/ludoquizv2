@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cu1vj62fum6v1"]
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bb7622de26eat"]
 
 [ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
 

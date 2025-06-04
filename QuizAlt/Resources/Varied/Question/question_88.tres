@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bq6h0y1as83b6"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Em que país está localizado o Monte Everest?"
+type = 0
+options = Array[String](["Nepal", "Índia", "Butão"])
+correct = "Nepal"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

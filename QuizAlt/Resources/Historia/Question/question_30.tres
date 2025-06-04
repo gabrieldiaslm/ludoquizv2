@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://5de4b79fd1734212b052d005635a6405"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual imperador estava no poder quando a escravidão foi abolida?"
+type = 0
+options = Array[String](["Dom Pedro II", "Dom Pedro I", "Nenhum"])
+correct = "Nenhum"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

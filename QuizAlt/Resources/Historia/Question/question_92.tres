@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://9611605b122f415cad15d63d117f2fe1"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual civilização criou o calendário solar de 365 dias?"
+type = 0
+options = Array[String](["Egípcia", "Asteca", "Chinesa"])
+correct = "Egípcia"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://doasflgnqko4x"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Em que ano ocorreu a independência do Brasil?"
+type = 0
+options = Array[String](["1822", "1889", "1808"])
+correct = "1822"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

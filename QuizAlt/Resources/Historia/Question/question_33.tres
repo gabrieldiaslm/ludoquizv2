@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dce627e04a714018874371ec4243a897"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "O que foi o Estado Novo no Brasil?"
+type = 0
+options = Array[String](["Nova Constituição", "Ditadura de Vargas", "Golpe de 1964"])
+correct = "Ditadura de Vargas"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

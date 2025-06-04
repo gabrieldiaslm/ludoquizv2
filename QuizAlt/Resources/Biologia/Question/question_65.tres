@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://0c207f008a48420c9534c30438a0d1c4"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "O que é uma bússola usada para medir?"
+type = 0
+options = Array[String](["Direção", "Altura", "Distância"])
+correct = "Direção"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

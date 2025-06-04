@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://e2b6a884a9ba44a789fed79d2c9b1a13"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual foi a principal causa da Guerra Fria?"
+type = 0
+options = Array[String](["Disputa ideológica", "Conflito religioso", "Corrida colonial"])
+correct = "Disputa ideológica"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

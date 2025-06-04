@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://1f41e582d27f4a65a23de43058435f10"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual era a principal instituição da Idade Média?"
+type = 0
+options = Array[String](["Império Bizantino", "Igreja Católica", "Reino da França"])
+correct = "Igreja Católica"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

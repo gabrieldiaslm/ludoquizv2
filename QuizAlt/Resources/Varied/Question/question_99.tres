@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bndt1e100smd"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quantos jogadores cada time tem em campo em uma partida de futebol"
+type = 0
+options = Array[String](["9", "12", "11"])
+correct = "11"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

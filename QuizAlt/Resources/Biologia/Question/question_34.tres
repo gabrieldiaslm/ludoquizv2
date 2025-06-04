@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://e58ad349ea3e43aeba6b550597bdd0a0"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual cientista descobriu a penicilina?"
+type = 0
+options = Array[String](["Alexander Fleming", "Louis Pasteur", "Marie Curie"])
+correct = "Alexander Fleming"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

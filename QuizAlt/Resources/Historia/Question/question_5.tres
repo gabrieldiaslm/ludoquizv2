@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://e1c25b1951494eaf8ea6c26a83b120f4"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual povo é conhecido por desenvolver o alfabeto?"
+type = 0
+options = Array[String](["Gregos", "Romanos", "Fenícios"])
+correct = "Fenícios"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

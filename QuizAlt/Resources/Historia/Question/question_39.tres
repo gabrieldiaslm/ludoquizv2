@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://01cdbf8354ef4bcda7f9e3b6f48f0105"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quem liderou o movimento dos Direitos Civis nos EUA?"
+type = 0
+options = Array[String](["Malcolm X", "Martin Luther King", "Obama"])
+correct = "Martin Luther King"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

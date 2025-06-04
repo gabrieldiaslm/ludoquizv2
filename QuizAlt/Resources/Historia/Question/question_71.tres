@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://76336af43cbb4e1b8a7e553e02ed9303"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual evento iniciou a Idade Contemporânea?"
+type = 0
+options = Array[String](["Revolução Francesa", "Guerra de Independência Americana", "Primeira Guerra Mundial"])
+correct = "Revolução Francesa"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

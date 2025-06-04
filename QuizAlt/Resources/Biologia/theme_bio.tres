@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=8 format=3 uid="uid://508bm10cnjav"]
+
+[ext_resource type="Script" uid="uid://musv3l1re3c0" path="res://QuizAlt/QuizScripts/Resources/theme.gd" id="1_70504"]
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="2_jp7vk"]
+[ext_resource type="Resource" uid="uid://ucda4e7cxdu0" path="res://QuizAlt/Resources/Biologia/Question/question_1.tres" id="3_haus3"]
+[ext_resource type="Resource" uid="uid://b1p0ye7k26y2b" path="res://QuizAlt/Resources/Biologia/Question/question_2.tres" id="4_x1n0u"]
+[ext_resource type="Resource" uid="uid://bsgut58jwy0xl" path="res://QuizAlt/Resources/Biologia/Question/question_3.tres" id="5_sjxfl"]
+[ext_resource type="Resource" uid="uid://clahqf5a3rlx8" path="res://QuizAlt/Resources/Biologia/Question/question_4.tres" id="6_l46a1"]
+[ext_resource type="Resource" uid="uid://d3swgd6hqe7ul" path="res://QuizAlt/Resources/Biologia/Question/question_5.tres" id="7_hyjcd"]
+
+[resource]
+script = ExtResource("1_70504")
+theme = Array[ExtResource("2_jp7vk")]([ExtResource("3_haus3"), ExtResource("4_x1n0u"), ExtResource("5_sjxfl"), ExtResource("6_l46a1"), ExtResource("7_hyjcd")])
+metadata/_custom_type_script = "uid://musv3l1re3c0"

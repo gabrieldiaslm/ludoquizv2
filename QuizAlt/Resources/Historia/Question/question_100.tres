@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://db9ea56deaa54244b7b06afeeb0aec49"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual cidade foi epicentro do Império Bizantino?"
+type = 0
+options = Array[String](["Atenas", "Roma", "Constantinopla"])
+correct = "Constantinopla"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

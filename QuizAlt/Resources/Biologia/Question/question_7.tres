@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dc29a82d211e406ea4d205986ccf0957"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual é o osso mais longo do corpo humano?"
+type = 0
+options = Array[String](["Fêmur", "Tíbia", "Úmero"])
+correct = "Fêmur"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

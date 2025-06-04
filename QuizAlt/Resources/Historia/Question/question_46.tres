@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://17f0bb222d874dc59e0bb69f3255a45f"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual invenção revolucionou a comunicação no século XV?"
+type = 0
+options = Array[String](["Telefone", "Imprensa", "Telégrafo"])
+correct = "Imprensa"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

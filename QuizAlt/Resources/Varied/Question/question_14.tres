@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dcmw1p8dav5hb"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Em que continente fica a Austrália?"
+type = 0
+options = Array[String](["África", "Europa", "Oceania"])
+correct = "Oceania"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dnqoop8yc4w5"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quem escreveu 'Capitães da Areia'?"
+type = 0
+options = Array[String](["Jorge Amado", "Graciliano Ramos", "José de Alencar"])
+correct = "Jorge Amado"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://66c241be2d2746438ba2943f51e51bd0"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual substância é responsável pela coagulação do sangue?"
+type = 0
+options = Array[String](["Plaquetas", "Glóbulos brancos", "Hemoglobina"])
+correct = "Plaquetas"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://4d3dcc0088804a8e9d2db20f8f5968fe"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual desses órgãos pertence ao sistema respiratório?"
+type = 0
+options = Array[String](["Pulmão", "Rim", "Estômago"])
+correct = "Pulmão"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://8be9b9ff3dc4493d81ed156507c139eb"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quem foi o primeiro imperador da China unificada?"
+type = 0
+options = Array[String](["Qin Shi Huang", "Sun Tzu", "Confúcio"])
+correct = "Qin Shi Huang"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

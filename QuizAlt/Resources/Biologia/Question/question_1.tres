@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://9693ec4e8cdd4707ba5c0ac6f340d11b"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual é o planeta mais próximo do Sol?"
+type = 0
+options = Array[String](["Terra", "Mercúrio", "Marte"])
+correct = "Mercúrio"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

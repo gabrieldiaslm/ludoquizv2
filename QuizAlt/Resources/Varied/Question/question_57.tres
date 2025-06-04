@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://oboht4gv0jrm"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Que tipo de energia é gerada por usinas eólicas?"
+type = 0
+options = Array[String](["Solar", "Hidrelétrica", "Eólica"])
+correct = "Eólica"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

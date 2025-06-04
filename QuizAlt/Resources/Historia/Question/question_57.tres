@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://90f68890eee548399d87a4082090772b"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual país foi o primeiro a abolir a escravidão nas Américas?"
+type = 0
+options = Array[String](["Brasil", "Haiti", "Estados Unidos"])
+correct = "Haiti"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

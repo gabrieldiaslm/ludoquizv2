@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cd840ebd392d449ea87e351848aed82b"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quem liderou a independência do México?"
+type = 0
+options = Array[String](["Miguel Hidalgo", "Simón Bolívar", "José de San Martín"])
+correct = "Miguel Hidalgo"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

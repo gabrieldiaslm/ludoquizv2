@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cc38e74d2086499e86133424f6f569c9"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quem foi o líder da independência da Bolívia?"
+type = 0
+options = Array[String](["Simón Bolívar", "José de San Martín", "Francisco Morazán"])
+correct = "Simón Bolívar"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

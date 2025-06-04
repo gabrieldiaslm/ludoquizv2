@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://9877b047c5b0463fbd3a2eaad07a23ee"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual é o símbolo químico do oxigênio?"
+type = 0
+options = Array[String](["O2", "O", "Ox"])
+correct = "O"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

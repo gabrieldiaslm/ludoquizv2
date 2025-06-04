@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://e5a69fbe31874a9cb29f3a58653a99a7"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Que país lançou as bombas atômicas em Hiroshima e Nagasaki?"
+type = 0
+options = Array[String](["Alemanha", "Estados Unidos", "Japão"])
+correct = "Estados Unidos"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

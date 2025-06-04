@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://duvcpyhxi70qy"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual é o nome da estrela mais próxima da Terra?"
+type = 0
+options = Array[String](["Sirius", "Sol", "Betelgeuse"])
+correct = "Sol"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

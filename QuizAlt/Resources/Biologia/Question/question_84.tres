@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://b81d1854b85d4ddcac04654123a76415"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "O que é um eclipse lunar?"
+type = 0
+options = Array[String](["Terra entre o Sol e a Lua", "Lua entre o Sol e a Terra", "Sol entre a Lua e a Terra"])
+correct = "Terra entre o Sol e a Lua"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

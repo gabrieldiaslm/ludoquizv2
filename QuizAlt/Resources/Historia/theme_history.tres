@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=8 format=3 uid="uid://b3dey0niwdvji"]
+
+[ext_resource type="Script" uid="uid://musv3l1re3c0" path="res://QuizAlt/QuizScripts/Resources/theme.gd" id="1_cnyhu"]
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="2_6svor"]
+[ext_resource type="Resource" uid="uid://dtebkoknllux8" path="res://QuizAlt/Resources/Historia/Question/question_1.tres" id="3_gnyx3"]
+[ext_resource type="Resource" uid="uid://v8pp3prwyc7j" path="res://QuizAlt/Resources/Historia/Question/question_2.tres" id="4_lsiwa"]
+[ext_resource type="Resource" uid="uid://cocosge1cdjws" path="res://QuizAlt/Resources/Historia/Question/question_3.tres" id="5_j7exh"]
+[ext_resource type="Resource" uid="uid://7josjsu82nsy" path="res://QuizAlt/Resources/Historia/Question/question_4.tres" id="6_gmjrt"]
+[ext_resource type="Resource" uid="uid://cahw3utyommid" path="res://QuizAlt/Resources/Historia/Question/question_5.tres" id="7_mdahs"]
+
+[resource]
+script = ExtResource("1_cnyhu")
+theme = Array[ExtResource("2_6svor")]([ExtResource("3_gnyx3"), ExtResource("4_lsiwa"), ExtResource("5_j7exh"), ExtResource("6_gmjrt"), ExtResource("7_mdahs")])
+metadata/_custom_type_script = "uid://musv3l1re3c0"

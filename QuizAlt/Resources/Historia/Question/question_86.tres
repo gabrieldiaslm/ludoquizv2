@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://4c0c8fb9a0fc496b9c4f5260744e2514"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual civilização construiu os zigurates?"
+type = 0
+options = Array[String](["Babilônia", "Egito", "Grécia"])
+correct = "Babilônia"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

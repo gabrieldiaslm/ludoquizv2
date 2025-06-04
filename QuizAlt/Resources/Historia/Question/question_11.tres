@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://edb1a86a68e14bbe84240b703aca1c25"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual navegador chegou à Índia contornando a África?"
+type = 0
+options = Array[String](["Cristóvão Colombo", "Pedro Álvares Cabral", "Vasco da Gama"])
+correct = "Vasco da Gama"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

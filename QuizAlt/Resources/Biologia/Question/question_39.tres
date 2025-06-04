@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://cd3f88b76cd444c9a01941a0c2e2fe6c"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual célula é responsável pela defesa do corpo?"
+type = 0
+options = Array[String](["Glóbulos brancos", "Hemácias", "Plaquetas"])
+correct = "Glóbulos brancos"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

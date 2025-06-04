@@ -1,8 +1,11 @@
 extends Node
+var temas_variados = preload("res://QuizAlt/Resources/Varied/theme_varied.tres")
+var temas_bio = preload("res://QuizAlt/Resources/Biologia/theme_bio.tres")
 
+var quiz = GameManager.theme
 signal question_correct(value: bool)
 signal close_popup()
-@export var quiz: QuizTheme
+#@export var quiz: QuizTheme
 @export var color_right: Color
 @export var color_wrong:Color
 

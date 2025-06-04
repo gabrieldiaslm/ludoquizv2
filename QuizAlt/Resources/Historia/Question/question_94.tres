@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://2c71ff8f565f4d5ea6266ca0b1bfa07d"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual império foi derrotado na Primeira Guerra Mundial e deu origem à Turquia moderna?"
+type = 0
+options = Array[String](["Otomano", "Persa", "Mongol"])
+correct = "Otomano"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

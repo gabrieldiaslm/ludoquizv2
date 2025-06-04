@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bs72hdhyevken"]
 
 [ext_resource type="PackedScene" uid="uid://cmnljkkjubyya" path="res://Scenes/Roots/Core_Gamplay_Root.tscn" id="1_hpn5y"]
-[ext_resource type="Texture2D" uid="uid://d2a7wvwftuaql" path="res://Arts/Textures_Game/Background/background.jpg" id="2_ldk7m"]
+[ext_resource type="Texture2D" uid="uid://d2a7wvwftuaql" path="res://Arts/Textures_Game/Background/background.jpg" id="2_wn4ok"]
 
 [node name="LevelMainGamePlay" type="Node2D"]
 
@@ -14,4 +14,4 @@ zoom = Vector2(0.2, 0.2)
 [node name="BackGround2DSprite" type="Sprite2D" parent="."]
 position = Vector2(-63, -440)
 scale = Vector2(1.46929, 1.46929)
-texture = ExtResource("2_ldk7m")
+texture = ExtResource("2_wn4ok")

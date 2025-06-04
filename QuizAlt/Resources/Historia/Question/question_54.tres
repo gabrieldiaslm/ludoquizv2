@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://db79b39d28ae4637b5a7dc20ceef1f4f"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Que tratado dividiu as terras do novo mundo entre Portugal e Espanha?"
+type = 0
+options = Array[String](["Tratado de Paris", "Tratado de Madri", "Tratado de Tordesilhas"])
+correct = "Tratado de Tordesilhas"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://b7a654bed1bf4fe185a4d558e68fdf4b"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual é o nome do planeta mais distante do Sol?"
+type = 0
+options = Array[String](["Netuno", "Urano", "Plutão"])
+correct = "Netuno"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

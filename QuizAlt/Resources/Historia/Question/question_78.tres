@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://3f8a8f21147449e0a9c13e4fbcf91a3b"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quem governava a França durante a Revolução Francesa?"
+type = 0
+options = Array[String](["Luís XVI", "Napoleão Bonaparte", "Robespierre"])
+correct = "Luís XVI"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://87483afc234341559d4478be76decbff"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual é o maior órgão do corpo humano?"
+type = 0
+options = Array[String](["Intestino", "Fígado", "Pele"])
+correct = "Pele"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

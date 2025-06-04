@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://80c22833e0714f1f92d5c31ab43e539a"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual documento foi assinado em 1215 na Inglaterra?"
+type = 0
+options = Array[String](["Magna Carta", "Declaração Universal", "Constituição Inglesa"])
+correct = "Magna Carta"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

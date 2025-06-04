@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://4f0c0ce4fbd6486f86c0488235bc4d10"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Que rei francês ficou conhecido como 'Rei Sol'?"
+type = 0
+options = Array[String](["Luís XVI", "Luís XIV", "Luís XIII"])
+correct = "Luís XIV"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

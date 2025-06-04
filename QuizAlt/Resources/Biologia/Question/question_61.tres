@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://ffb97aa6e1874f76a18acd0fb7bf1107"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual dessas estruturas é exclusiva das células vegetais?"
+type = 0
+options = Array[String](["Cloroplasto", "Mitocôndria", "Ribossomo"])
+correct = "Cloroplasto"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

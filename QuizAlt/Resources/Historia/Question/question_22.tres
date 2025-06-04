@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bf7c750a0b024e108dac1e0929e25a17"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual era a primeira capital do Brasil?"
+type = 0
+options = Array[String](["Recife", "Rio de Janeiro", "Salvador"])
+correct = "Salvador"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

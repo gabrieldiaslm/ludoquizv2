@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://83997fb92c434f989de2519ea0871679"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual é a unidade de medida da corrente elétrica?"
+type = 0
+options = Array[String](["Ampère", "Volt", "Ohm"])
+correct = "Ampère"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

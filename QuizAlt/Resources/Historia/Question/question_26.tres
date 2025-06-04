@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://9494acb467fb4cd0aff5163d42a5b32d"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Quem proclamou a independência do Brasil?"
+type = 0
+options = Array[String](["Dom João VI", "Dom Pedro I", "José Bonifácio"])
+correct = "Dom Pedro I"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

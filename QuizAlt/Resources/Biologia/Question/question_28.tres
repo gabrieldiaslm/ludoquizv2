@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://868207ea07334c9c8fddbe1c458fda2c"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual parte da planta é responsável pela fotossíntese?"
+type = 0
+options = Array[String](["Folha", "Raiz", "Caule"])
+correct = "Folha"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://96e02acbbb31494980e4327bda73d988"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "O que eram as Cruzadas?"
+type = 0
+options = Array[String](["Feiras comerciais", "Guerras religiosas", "Festas medievais"])
+correct = "Guerras religiosas"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

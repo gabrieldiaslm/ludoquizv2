@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://0b184aa2038f4b4087fb10e9ae0ad0b6"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "O que é uma reação química?"
+type = 0
+options = Array[String](["Transformação de substâncias", "Mudança de estado físico", "Deslocamento de matéria"])
+correct = "Transformação de substâncias"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

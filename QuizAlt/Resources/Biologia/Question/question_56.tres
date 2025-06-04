@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://8616408c219645c899da9dc1d39b9fd3"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "O que é um telescópio?"
+type = 0
+options = Array[String](["Instrumento para ver estrelas", "Tipo de satélite", "Fóssil de estrela"])
+correct = "Instrumento para ver estrelas"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://d4c4e1e6c75b4d28af660c40cd217dc6"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Que nome se dá à energia armazenada em alimentos?"
+type = 0
+options = Array[String](["Química", "Elétrica", "Cinetica"])
+correct = "Química"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

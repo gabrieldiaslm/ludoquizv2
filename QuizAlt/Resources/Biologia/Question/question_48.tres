@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://0d5121b611554d5c8d5dcf0f9465c5cc"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Qual é o nome da camada da Terra onde ocorrem os terremotos?"
+type = 0
+options = Array[String](["Crosta", "Núcleo", "Manto"])
+correct = "Crosta"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://3ae91312377c488aba2d6999d00240be"]
+
+[ext_resource type="Script" uid="uid://dl5ho563lh8kh" path="res://QuizAlt/QuizScripts/Resources/question.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+question_info = "Em que ano começou a Segunda Guerra Mundial?"
+type = 0
+options = Array[String](["1945", "1939", "1918"])
+correct = "1939"
+metadata/_custom_type_script = "uid://dl5ho563lh8kh"

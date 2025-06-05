@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://neuyoeixidbp" path="res://QuizAlt/incorrect.wav" id="4_88hwp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cmoah"]
-bg_color = Color(0.403922, 0.572549, 0, 1)
+bg_color = Color(1, 0.870588, 0.34902, 1)
 
 [node name="Main" type="CanvasLayer"]
 script = ExtResource("1_cmoah")
@@ -37,6 +37,7 @@ offset_bottom = 404.0
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 size_flags_vertical = 6
+theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 40
 text = "LA PREGUNTA"
 horizontal_alignment = 1

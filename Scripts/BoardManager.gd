@@ -15,6 +15,7 @@ var currentPlayerColor:GameManager.PlayerColor
 signal OnHasKill
 
 func _ready() -> void:
+	$"../../gameOST".play()
 	UpdatePlayerTurn()
 	GameManager.OnPlayerSelectPiece.connect(_on_player_select_piece)
 	pass
@@ -57,7 +58,7 @@ func IsThisPlayerTurn(playerType:GameManager.PlayerColor)->bool:
 	return returnValue
 
 func _on_dice_root_on_dice_roll_begin() -> void:
-	
+	$"../../dadoSFX".play()
 	#stop animation because player clicked on dice to start dice animation
 	animation_PlayerForPlaces.stop()
 	pass # Replace with function body.

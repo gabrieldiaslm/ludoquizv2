@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dhhegj5camow0"]
+[gd_scene load_steps=9 format=3 uid="uid://dhhegj5camow0"]
 
 [ext_resource type="Script" uid="uid://ckl8uhw4otnq1" path="res://QuizAlt/tema.gd" id="1_vso4q"]
 [ext_resource type="Texture2D" uid="uid://b5q2we1p5k2yy" path="res://Arts/Textures_Game/Background/bgtheme.jpg" id="2_ojrhi"]
+[ext_resource type="AudioStream" uid="uid://ca4unfbg03kgm" path="res://Arts/Audio/btn.wav" id="3_sjqcm"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sjqcm"]
 texture = ExtResource("2_ojrhi")
@@ -9,7 +10,7 @@ texture = ExtResource("2_ojrhi")
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fupdq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vso4q"]
-bg_color = Color(1, 0.417398, 0.638182, 1)
+bg_color = Color(0, 0.443137, 0.647059, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -19,7 +20,7 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.4)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ojrhi"]
-bg_color = Color(0.548839, 0, 0.281566, 1)
+bg_color = Color(0.0117647, 0.207843, 0.337255, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -29,7 +30,7 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.4)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sjqcm"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0.882353, 0.0784314, 0.0509804, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -48,7 +49,7 @@ grow_vertical = 2
 script = ExtResource("1_vso4q")
 
 [node name="Panel" type="Panel" parent="."]
-modulate = Color(3.60981e-08, 0.390959, 0.0171437, 1)
+modulate = Color(0.0304689, 0.275583, 2.40654e-08, 1)
 layout_mode = 0
 offset_left = -16.0
 offset_top = -8.0
@@ -75,10 +76,10 @@ theme_override_constants/separation = 38
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.732402, 1, 0.707756, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_fupdq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vso4q")
@@ -89,10 +90,10 @@ text = "Variado"
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.732402, 1, 0.707756, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_fupdq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vso4q")
@@ -103,16 +104,19 @@ text = "História"
 [node name="Button3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.732402, 1, 0.707756, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_fupdq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vso4q")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ojrhi")
 theme_override_styles/normal = SubResource("StyleBoxFlat_sjqcm")
 text = "Biologia"
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_sjqcm")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="pressed_variados"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="pressed_historia"]

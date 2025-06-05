@@ -1,11 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://dk3j2l0b3pfx1"]
+[gd_scene load_steps=10 format=3 uid="uid://dk3j2l0b3pfx1"]
 
 [ext_resource type="Script" uid="uid://cplqu2enh64ia" path="res://Scenes/menu/creditos.gd" id="1_ixsqg"]
+[ext_resource type="AudioStream" uid="uid://difvjol0vofoc" path="res://Arts/Audio/lobbyOST.mp3" id="2_qe1m0"]
+[ext_resource type="AudioStream" uid="uid://ca4unfbg03kgm" path="res://Arts/Audio/btn.wav" id="3_25ou6"]
+[ext_resource type="AudioStream" uid="uid://cas68ov0uuxi4" path="res://Arts/Audio/settings.wav" id="4_7kghu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ixsqg"]
+bg_color = Color(1, 0.870588, 0.34902, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qe1m0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_25ou6"]
-bg_color = Color(1, 0.417398, 0.638182, 1)
+bg_color = Color(0.00392157, 0.439216, 0.647059, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -15,7 +21,7 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.4)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7kghu"]
-bg_color = Color(0.548839, 0, 0.281566, 1)
+bg_color = Color(0.00392157, 0.211765, 0.352941, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -25,7 +31,7 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.4)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyjco"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0.890196, 0.0705882, 0.0509804, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -49,6 +55,7 @@ offset_left = -23.0
 offset_top = -21.0
 offset_right = 1220.0
 offset_bottom = 678.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ixsqg")
 
 [node name="QuestionText" type="Label" parent="."]
 custom_minimum_size = Vector2(0, 80)
@@ -65,14 +72,15 @@ offset_bottom = 149.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 6
+theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 40
 text = "Ciência da Computação
 2025.1 - UESPI
 
 Gabriel Dias Lemos Martins
-Hellen Jasmine 
-Helena Sousa
-Lorena Bezerra"
+Hellen Jasmine Pessoa Ferreira
+Helena Sousa de Oliveira
+Lorena Bezerra Martins"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -91,15 +99,27 @@ offset_bottom = -53.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_qe1m0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_25ou6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_7kghu")
 theme_override_styles/normal = SubResource("StyleBoxFlat_wyjco")
 text = "VOLTAR"
+
+[node name="lobbyOST" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_qe1m0")
+volume_db = -4.685
+parameters/looping = false
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_25ou6")
+
+[node name="credits" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_7kghu")
+volume_db = -3.748
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed_credits"]

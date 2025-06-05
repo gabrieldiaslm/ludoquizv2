@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dsjhri58sioml"]
+[gd_scene load_steps=8 format=3 uid="uid://dsjhri58sioml"]
 
 [ext_resource type="Script" uid="uid://xpdfuixs7hkq" path="res://Scripts/intro.gd" id="1_865bt"]
 [ext_resource type="Texture2D" uid="uid://dt3owk4yi0igo" path="res://Arts/intro.png" id="2_dsk78"]
+[ext_resource type="AudioStream" uid="uid://bq8afv8t18bfm" path="res://Arts/Audio/apenas.mp3" id="3_m6str"]
 
 [sub_resource type="Animation" id="Animation_pimde"]
 length = 0.001
@@ -78,3 +79,7 @@ color = Color(0, 0, 0, 1)
 libraries = {
 &"": SubResource("AnimationLibrary_h4t2a")
 }
+
+[node name="introaudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_m6str")
+volume_db = -3.621

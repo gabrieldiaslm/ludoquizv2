@@ -7,7 +7,6 @@ enum PlayerColor {Green,Yellow,Blue,Red}
 var temas_variados = preload("res://QuizAlt/Resources/Varied/theme_varied.tres")
 var temas_bio = preload("res://QuizAlt/Resources/Biologia/theme_bio.tres")
 var temas_historia= preload("res://QuizAlt/Resources/Historia/theme_history.tres")
-
 var theme = temas_historia
 
 var GameCurrentState = GameStateEnum.PlayerCanRollDice

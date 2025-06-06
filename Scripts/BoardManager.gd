@@ -65,7 +65,7 @@ func _on_dice_root_on_dice_roll_begin() -> void:
 
 func _on_dice_root_on_dice_rolled(value: int) -> void:
 	print("diceRolled! Value is ",value)
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(0.8).timeout
 	currentDiceValue = value
 	
 	
@@ -109,7 +109,7 @@ func MovePieces(value: int, moveThisPiece: Piece) -> void:
 	for i in range(moveThisPiece.GetCurrentPosition(),value):
 		print(i)
 		moveThisPiece.position = way_points.GetPositionOfThisPoint(i,moveThisPiece.CurrentPlayerColor)
-		await get_tree().create_timer(0.1).timeout
+		await get_tree().create_timer(0.5).timeout
 	
 	if value == 57:
 		#update current piece value to current position so next time we get frash value which we use in value
@@ -141,7 +141,7 @@ func MovePiecesToHome(value: int, moveThisPiece: Piece) -> void:
 	for i in range(moveThisPiece.GetCurrentPosition()-1,value-1,-1):
 		print("back move ",i,"__",moveThisPiece.CurrentPlayerColor)
 		moveThisPiece.position = way_points.GetPositionOfThisPoint(i,moveThisPiece.CurrentPlayerColor)
-		await get_tree().create_timer(0.1).timeout
+		await get_tree().create_timer(0.5).timeout
 		
 	#update current piece value to current position so next time we get frash value which we use in value
 	moveThisPiece.CurrentPosition = value

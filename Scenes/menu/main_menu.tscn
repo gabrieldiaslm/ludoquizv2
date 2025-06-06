@@ -166,6 +166,7 @@ text = "Sair"
 [node name="lobbyOST" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_uffod")
 volume_db = -4.685
+bus = &"Music"
 parameters/looping = false
 
 [node name="Options" type="Panel" parent="."]
@@ -241,7 +242,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 script = ExtResource("4_655o3")
-audio_bus_name = "Master"
+audio_bus_name = "Music"
 
 [node name="CheckButton" type="CheckButton" parent="Options"]
 layout_mode = 1

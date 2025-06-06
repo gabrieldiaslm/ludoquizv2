@@ -113,6 +113,7 @@ text = "VOLTAR"
 [node name="lobbyOST" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_qe1m0")
 volume_db = -4.685
+bus = &"Music"
 parameters/looping = false
 
 [node name="buttonclick" type="AudioStreamPlayer" parent="."]

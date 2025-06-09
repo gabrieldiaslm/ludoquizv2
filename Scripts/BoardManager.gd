@@ -122,6 +122,9 @@ func MovePieces(value: int, moveThisPiece: Piece) -> void:
 	
 	if (hasKill):
 		await OnHasKill
+	
+	if piecesManager.GetPieceGroupBasedOnType(currentPlayerColor).HasThisPlayerCompleted():
+		get_tree().change_scene_to_file("res://Scenes/menu/victory.tscn")
 		
 	moveThisPiece.CurrentState = GameManager.PieceStateEnum.InWayPoint
 	

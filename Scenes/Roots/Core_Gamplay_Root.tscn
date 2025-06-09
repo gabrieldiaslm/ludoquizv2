@@ -22,9 +22,11 @@ visible = false
 [node name="Pieces" parent="." instance=ExtResource("3_x1548")]
 
 [node name="Dice" type="Node2D" parent="."]
+position = Vector2(0, -15.405)
+scale = Vector2(1.315, 1.315)
 
 [node name="DiceRoot" parent="Dice" instance=ExtResource("6_bx5hx")]
-position = Vector2(0, 1172)
+position = Vector2(0, 876.354)
 IsAutoDiceRoll = false
 
 [node name="WayPointsManager" parent="." instance=ExtResource("7_rw8h0")]

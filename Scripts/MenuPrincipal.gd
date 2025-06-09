@@ -42,5 +42,6 @@ func _on_exit_pressed() -> void:
 
 
 func _back_pressed() -> void:
+	$buttonclick.play()
 	v_box_container.visible = true
 	options.visible = false

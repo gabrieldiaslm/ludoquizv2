@@ -58,7 +58,7 @@ func RollDice() -> void:
 			randomNumber = 6
 			pass
 		
-		OnDiceRolled.emit(randomNumber)
+		OnDiceRolled.emit(randomNumber) #randomNumber
 		pass
 	pass
 	

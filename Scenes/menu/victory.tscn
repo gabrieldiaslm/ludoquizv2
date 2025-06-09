@@ -1,0 +1,87 @@
+[gd_scene load_steps=9 format=3 uid="uid://dr2nmayv2s1ts"]
+
+[ext_resource type="Texture2D" uid="uid://cl5gau25osxbk" path="res://Arts/Textures_Game/Background/Sem Título-1.jpg" id="1_kbnve"]
+[ext_resource type="Script" uid="uid://b3chuybai2rf8" path="res://Scenes/menu/victory.gd" id="1_xyy71"]
+[ext_resource type="Texture2D" uid="uid://din8fo7qkeqa3" path="res://Arts/Textures_Game/Background/GAUCHE.png" id="2_m7f13"]
+[ext_resource type="AudioStream" uid="uid://ca4unfbg03kgm" path="res://Arts/Audio/btn.wav" id="4_w5dw3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bx8uk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ep0uo"]
+bg_color = Color(0.00392157, 0.439216, 0.647059, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qsdpu"]
+bg_color = Color(0.00392157, 0.211765, 0.352941, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_40w50"]
+bg_color = Color(0.890196, 0.0705882, 0.0509804, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.258824)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xyy71")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577, 344)
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("1_kbnve")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(577, 358)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_m7f13")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -145.0
+offset_top = -114.0
+offset_right = 146.0
+offset_bottom = -53.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bx8uk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ep0uo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qsdpu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_40w50")
+text = "SAIR"
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_w5dw3")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
